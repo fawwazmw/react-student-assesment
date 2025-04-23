@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Technical Test Submission
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description Project
+This application is a solution for the technical test given. This application allows a lecturer to give an assessment to 10 students based on 4 assessment aspects. Each aspect can be given a value from 1 to 10. The assessment results will be generated in JSON format and displayed in the browser console.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Main Features
+- Input scores for 10 students on 4 assessment aspects.
+- Input validation: Only accepts numbers between 1 and 10.
+- JSON output in the requested format:
+  ```json
+  {
+    "aspek_penilaian_1": {
+      "mahasiswa_1": 5,
+      "mahasiswa_2": 8,
+      ...
+    },
+    ...
+  }
+- "Save" button to display the JSON output in the browser console.
 
-### `npm start`
+## Technology Used
+- React.js : JavaScript framework for building user interfaces.
+- CSS : Simple styling for table and button appearance.
+- JavaScript (ES6+) : For application logic.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How to Run the Application
+### Prerequisite
+Before running the application, make sure you have installed:
+- Node.js (version 16 or higher)
+- npm (Node Package Manager): Usually included in Node.js installation.
+### Steps
+#### 1. Clone Repository
+Open a terminal and run the following command to download the source code:
+```bash
+git clone https://github.com/username/nama-repository.git
+cd nama-repository
+```
+#### 2. Install Dependencies
+Install all required dependencies with the command:
+```bash
+npm install
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### 3. Run the Application
+Start the application with the command:
+```bash
+npm start
+```
+The application will run on http://localhost:3000.
 
-### `npm test`
+#### 4. View JSON Output
+- Enter grades for each student and assessment aspects.
+- Click the "Save" button.
+- Open the Console Browser (press F12 or Ctrl + Shift + I) to see the JSON output.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
+```plaintext
+penilaian-mahasiswa/
+├── public/               # Static File (index.html, favicon, dll.)
+├── src/
+│   ├── App.js            # Main components of the application
+│   ├── App.css           # Styling for App components
+│   ├── index.js          # Application entry point
+│   └── index.css         # Global styling
+├── package.json          # List of dependencies and scripts
+└── README.md             # Project documentation
+```
+## JSON Output Example
+After filling in the values ​​and pressing the "Save" button, the JSON output will be displayed in the console as follows:
 
-### `npm run build`
+```json
+{
+  "aspek_penilaian_1": {
+    "mahasiswa_1": 5,
+    "mahasiswa_2": 8,
+    "mahasiswa_3": 7,
+    ...
+    "mahasiswa_10": 9
+  },
+  "aspek_penilaian_2": {
+    "mahasiswa_1": 6,
+    "mahasiswa_2": 7,
+    "mahasiswa_3": 8,
+    ...
+    "mahasiswa_10": 10
+  },
+  ...
+}
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This repository is licensed under the [MIT License](https://opensource.org/license/MIT) . You are free to use, modify, and distribute this code as long as you credit the original source.
